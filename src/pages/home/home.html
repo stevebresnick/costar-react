@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'HOME' | translate }}</ion-title>
+    <ion-buttons end>
+    <button ion-button icon-only (click)="openModal()" class="language-button">
+      <ion-icon name="globe"></ion-icon>
+    </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 *ngFor="let article of articleService.articles">
+        <ion-card (click)="openArticle(article)">
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="{{ article.author_picture }}">
+            </ion-avatar>
+            <h2 [innerHTML]="article.title"></h2>
+            <p>{{ article.author_first_name }} {{ article.author_last_name }} {{ article.published_on }}</p>
+          </ion-item>
+          <img src="{{ article.image }}">
+          <ion-card-content>
+            <p [innerHTML]="article.summary"></p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

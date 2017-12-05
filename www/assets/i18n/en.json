@@ -1,0 +1,22 @@
+{
+  "HOME": "Home",
+  "LIKES": "Likes",
+  "DISCOVER": "Discover",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
+  "EMAIL": "Email Address",
+  "CHANGE_LANGUAGE": "Change language",
+  "LANGUAGE": "Language",
+  "ADVANCED": "Advanced",
+  "SAVE": "Save",
+  "NO_LIKES": "You haven't liked anything yet",
+  "DISCOVER_HEADING": "Looking for more?",
+  "DISCOVER_PROMPT": "To get in touch with us, fill in the contact form below.",
+  "NAME_LABEL": "Your name",
+  "EMAIL_LABEL": "E-mail address",
+  "COMPANY_LABEL": "Company name",
+  "MESSAGE_LABEL": "Message",
+  "DISCOVER_BUTTON": "Contact us",
+  "DISCOVER_CONFIRM_HEADER": "We got it!",
+  "DISCOVER_CONFIRM_PROMPT": "We will reach out to you shortly."
+}

@@ -1,0 +1,22 @@
+{
+  "HOME": "Casa",
+  "LIKES": "Gustos",
+  "DISCOVER": "Descubrir",
+  "FIRST_NAME": "Nombre de pila",
+  "LAST_NAME": "Apellido",
+  "EMAIL": "Email",
+  "CHANGE_LANGUAGE": "Cambiar idioma",
+  "LANGUAGE": "Idioma",
+  "ADVANCED": "Avanzado",
+  "SAVE": "Guardar",
+  "NO_LIKES": "Todavía no te ha gustado nada",
+  "DISCOVER_HEADING": "¿Está buscando más?",
+  "DISCOVER_PROMPT": "Para ponerse en contacto con nosotros, rellene el siguiente formulario de contacto.",
+  "NAME_LABEL": "Tu nombre",
+  "EMAIL_LABEL": "Correo electrónico",
+  "COMPANY_LABEL": "Nombre de empresa",
+  "MESSAGE_LABEL": "Mensaje",
+  "DISCOVER_BUTTON": "Contáctenos",
+  "DISCOVER_CONFIRM_HEADER": "¡Lo conseguimos!",
+  "DISCOVER_CONFIRM_PROMPT": "Nos pondremos en contacto con usted en breve."
+}

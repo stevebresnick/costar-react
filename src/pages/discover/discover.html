@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ 'DISCOVER' | translate }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="submitForm()" [formGroup]="discover" padding>
+    <h2>{{ 'DISCOVER_HEADING' | translate }}</h2>
+    <p>{{ 'DISCOVER_PROMPT' | translate }}</p>
+    <ion-list>
+      <ion-item>
+        <ion-label>{{ 'NAME_LABEL' | translate }}</ion-label>
+        <ion-input type="text" name="name" formControlName="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>{{ 'EMAIL_LABEL' | translate }}</ion-label>
+        <ion-input type="text" name="mail" formControlName="mail"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>{{ 'COMPANY_LABEL' | translate }}</ion-label>
+        <ion-input type="text" name="field_company" formControlName="field_company"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>{{ 'MESSAGE_LABEL' | translate }}</ion-label>
+        <ion-textarea type="text" name="message" formControlName="message"></ion-textarea>
+      </ion-item>
+    </ion-list>
+    <button ion-button color="primary" type="submit" block [disabled]="!discover.valid">{{ 'DISCOVER_BUTTON' | translate }}</button>
+  </form>
+</ion-content>

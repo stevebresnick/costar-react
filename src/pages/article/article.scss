@@ -1,0 +1,7 @@
+page-article {
+  button.like-button {
+    &.active, &:hover {
+      color: #d60000 !important;
+    }
+  }
+}

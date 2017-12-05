@@ -1,0 +1,26 @@
+<ion-content>
+  <ion-toolbar>
+    <ion-title>{{ 'CHANGE_LANGUAGE' | translate }}</ion-title>
+  </ion-toolbar>
+  <form (ngSubmit)="submitForm()" [formGroup]="configure" padding>
+    <ion-list>
+      <ion-item>
+        <ion-label>{{ 'LANGUAGE' | translate }}</ion-label>
+        <ion-select name="langcode" formControlName="langcode">
+          <ion-option value="en">English</ion-option>
+          <ion-option value="es">Español</ion-option>
+          <ion-option value="fr">Français</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>{{ 'ADVANCED' | translate }}</ion-label>
+        <ion-toggle checked="false" formControlName="toggle"></ion-toggle>
+      </ion-item>
+      <ion-item [hidden]="!configure.value.toggle">
+        <ion-label>Site URL</ion-label>
+        <ion-input type="text" name="url" title="Site URL" formControlName="url"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button color="primary" type="submit" block [disabled]="!configure.valid">{{ 'SAVE' | translate }}</button>
+  </form>
+</ion-content>

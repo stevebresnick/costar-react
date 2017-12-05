@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title [innerHtml]="article.title">
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="like()" class="like-button" [ngClass]="{'active': articleService.likes[this.article.id]}">
+        <ion-icon name="heart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col>
+        <img src="{{ article.image }}">
+        <h1 [innerHtml]="article.title"></h1>
+        <ion-list>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="{{ article.author_picture }}">
+            </ion-avatar>
+            <h2>{{ article.author_first_name }} {{ article.author_last_name }}</h2>
+            <p>{{ article.published_on }}</p>
+          </ion-item>
+        </ion-list>
+        <p [innerHTML]="article.text | absoluteurl"></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
